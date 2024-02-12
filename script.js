@@ -159,3 +159,14 @@ function check() {
         });
     }
 }
+function changeBtnCol() {
+    var btn = document.getElementsByTagName("button")
+    for (i = 0; i < btn.length; i++) {
+        if (btn[i].innerHTML == "X") {
+            btn[i].style.color = "#ea194d"
+        }
+        else if (btn[i].innerHTML == "O") {
+            btn[i].style.color = "#fad034"
+        }
+    }
+}
