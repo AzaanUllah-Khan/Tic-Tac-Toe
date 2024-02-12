@@ -1,5 +1,5 @@
 var turn = "X";
-document.getElementById(turn).style.border = "1px solid black"
+document.getElementById(turn).style.outline = "2px solid #6648c2"
 var one;
 var two;
 var three;
@@ -10,17 +10,20 @@ var seven;
 var eight;
 var nine;
 function game(btn) {
-    document.getElementById("X").style.border = "none"
-    document.getElementById("O").style.border = "none"
+    document.getElementById("X").style.outline = "none"
+    document.getElementById("O").style.outline = "none"
     if (btn.innerText == "") {
         btn.innerHTML = turn;
         updateVariables();
+        changeBtnCol()
         check();
+        turn = turn == "X" ? "O" : "X";
+        document.getElementById(turn).style.outline = "2px solid #6648c2"
     } else {
+        turn = turn
+        document.getElementById(turn).style.outline = "2px solid #6648c2"
         return;
     }
-    turn = turn == "X" ? "O" : "X";
-    document.getElementById(turn).style.border = "1px solid black"
 }
 
 function updateVariables() {
@@ -41,7 +44,7 @@ function check() {
             title: turn + " Won",
             icon: "success",
             confirmButtonColor: "#3085d6",
-            cancelButtonColor: "#d33",
+            cancelButtonColor: "#101032",
             confirmButtonText: "Play Again"
         }).then((result) => {
             if (result.isConfirmed) {
@@ -53,7 +56,7 @@ function check() {
             title: turn + " Won",
             icon: "success",
             confirmButtonColor: "#3085d6",
-            cancelButtonColor: "#d33",
+            cancelButtonColor: "#101032",
             confirmButtonText: "Play Again"
         }).then((result) => {
             if (result.isConfirmed) {
@@ -65,7 +68,7 @@ function check() {
             title: turn + " Won",
             icon: "success",
             confirmButtonColor: "#3085d6",
-            cancelButtonColor: "#d33",
+            cancelButtonColor: "#101032",
             confirmButtonText: "Play Again"
         }).then((result) => {
             if (result.isConfirmed) {
@@ -77,7 +80,7 @@ function check() {
             title: turn + " Won",
             icon: "success",
             confirmButtonColor: "#3085d6",
-            cancelButtonColor: "#d33",
+            cancelButtonColor: "#101032",
             confirmButtonText: "Play Again"
         }).then((result) => {
             if (result.isConfirmed) {
@@ -89,7 +92,7 @@ function check() {
             title: turn + " Won",
             icon: "success",
             confirmButtonColor: "#3085d6",
-            cancelButtonColor: "#d33",
+            cancelButtonColor: "#101032",
             confirmButtonText: "Play Again"
         }).then((result) => {
             if (result.isConfirmed) {
@@ -101,7 +104,7 @@ function check() {
             title: turn + " Won",
             icon: "success",
             confirmButtonColor: "#3085d6",
-            cancelButtonColor: "#d33",
+            cancelButtonColor: "#101032",
             confirmButtonText: "Play Again"
         }).then((result) => {
             if (result.isConfirmed) {
@@ -113,7 +116,7 @@ function check() {
             title: turn + " Won",
             icon: "success",
             confirmButtonColor: "#3085d6",
-            cancelButtonColor: "#d33",
+            cancelButtonColor: "#101032",
             confirmButtonText: "Play Again"
         }).then((result) => {
             if (result.isConfirmed) {
@@ -125,7 +128,7 @@ function check() {
             title: turn + " Won",
             icon: "success",
             confirmButtonColor: "#3085d6",
-            cancelButtonColor: "#d33",
+            cancelButtonColor: "#101032",
             confirmButtonText: "Play Again"
         }).then((result) => {
             if (result.isConfirmed) {
@@ -147,7 +150,7 @@ function check() {
             title: "It's a Draw",
             icon: "info",
             confirmButtonColor: "#3085d6",
-            cancelButtonColor: "#d33",
+            cancelButtonColor: "#101032",
             confirmButtonText: "Play Again"
         }).then((result) => {
             if (result.isConfirmed) {
@@ -156,4 +159,3 @@ function check() {
         });
     }
 }
-
