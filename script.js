@@ -180,7 +180,7 @@ function check() {
         eight.style.boxShadow = "1px 1px 10px 0 rgba(0,0,0,0.3)"
         nine.style.backgroundColor = "#101032b7"
         nine.style.boxShadow = "1px 1px 10px 0 rgba(0,0,0,0.3)"
-        document.getElementById("winner").innerHTML = turn + " Won"
+        document.getElementById("winner").innerHTML = "Match Draw"
         document.getElementById("winner").style.display = "block"
         var btn = document.getElementsByTagName("button")
         for (i = 0; i < btn.length; i++) {
