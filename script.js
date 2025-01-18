@@ -18,10 +18,10 @@ function game(btn) {
         changeBtnCol()
         check();
         turn = turn == "X" ? "O" : "X";
-        document.getElementById(turn).style.outline = "2px solid #6648c2"
+        document.getElementById(turn).style.outline = "2px solid #0271ff"
     } else {
         turn = turn
-        document.getElementById(turn).style.outline = "2px solid #6648c2"
+        document.getElementById(turn).style.outline = "2px solid #0271ff"
         return;
     }
 }
