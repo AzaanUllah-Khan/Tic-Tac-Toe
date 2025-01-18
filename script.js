@@ -1,5 +1,5 @@
 var turn = "X";
-document.getElementById(turn).style.outline = "2px solid #6648c2"
+document.getElementById(turn).style.outline = "2px solid #0271ff"
 var one;
 var two;
 var three;
