@@ -7,7 +7,7 @@
     font-family: 'Poppins';
 }
 body{
-    background-color: #1c1f52;
+    background-color: #cce2ff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -48,7 +48,7 @@ body{
 .container .game{
     padding: 10px;
     width: 300px;
-    background-color: #6648c2;
+    background-color: #0271ff;
     border-radius: 10px;
     margin-top: 50px;
     display: flex;
